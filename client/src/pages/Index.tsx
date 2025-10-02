@@ -1,0 +1,128 @@
+import { useEffect, useRef, useState } from 'react';
+
+import Navigation from '@/components/Navigation';
+import HeroSection from '@/components/HeroSection';
+import ImageLoop from '@/components/ImageLoop';
+import MusicConsentPopup from '@/components/MusicConsentPopup';
+// Cover images from attached assets
+import cover1Image from '@assets/cover1_1759418285505.JPG';
+import cover2Image from '@assets/cover2_1759418285505.JPG';
+import cover3Image from '@assets/cover3_1759418285505.JPG';
+import CountdownSection from '@/components/CountdownSection';
+import StorySection from '@/components/StorySection';
+import VideoSection from '@/components/VideoSection';
+import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
+import VenueSection from '@/components/VenueSection';
+import DressCodeSection from '@/components/DressCodeSection';
+import EntourageSection from '@/components/EntourageSection';
+import RSVPSection from '@/components/RSVPSection';
+import MemorableMomentsSection from '@/components/MemorableMomentsSection';
+import FAQSection from '@/components/FAQSection';
+import Footer from '@/components/Footer';
+import CoverSection from '@/components/CoverSection';
+import InvitationRevealSection from '@/components/InvitationRevealSection';
+import MusicControl from '@/components/MusicControl';
+import { AnimationContext } from '@/contexts/AnimationContext';
+
+const Index = () => {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [showMusicConsent, setShowMusicConsent] = useState(true);
+  const [musicConsent, setMusicConsent] = useState<boolean | null>(null);
+  const [animationsEnabled, setAnimationsEnabled] = useState(true);
+
+  // Ensure audio is properly initialized
+  useEffect(() => {
+    if (audioRef.current) {
+      const audio = audioRef.current;
+      audio.volume = 0.3;
+      audio.loop = true;
+
+      // Handle audio loading
+      const handleCanPlay = () => {
+        console.log('Audio is ready to play');
+      };
+
+      const handleError = (e: Event) => {
+        console.error('Audio loading error:', e);
+      };
+
+      const handleLoadedData = () => {
+        console.log('Audio data loaded successfully');
+      };
+
+      audio.addEventListener('canplay', handleCanPlay);
+      audio.addEventListener('error', handleError);
+      audio.addEventListener('loadeddata', handleLoadedData);
+
+      return () => {
+        audio.removeEventListener('canplay', handleCanPlay);
+        audio.removeEventListener('error', handleError);
+        audio.removeEventListener('loadeddata', handleLoadedData);
+      };
+    }
+  }, []);
+
+  return (
+    <AnimationContext.Provider value={{ animationsEnabled }}>
+      {/* Background Music - Always present */}
+      <audio
+        ref={audioRef}
+        loop
+        preload="auto"
+        crossOrigin="anonymous"
+        style={{ display: 'none' }}
+        data-testid="background-audio"
+      >
+        <source
+          src="https://res.cloudinary.com/dikazonnb/video/upload/v1759418265/ytmp3free.cc_god-wrote-this-love-christian-wedding-song-2025-heartfelt-faithbased-love-ballad-youtubemp3free.org_yfb6mp.mp3"
+          type="audio/mpeg"
+        />
+        {/* Fallback for browsers that don't support MP3 */}
+        <source
+          src="https://www.soundjay.com/misc/sounds/clock-ticking-5.wav"
+          type="audio/wav"
+        />
+        Your browser does not support the audio element.
+      </audio>
+
+      <div className="min-h-screen relative">
+        <Navigation />
+
+        {/* Main Content Sections */}
+        <main className="relative z-10">
+          <HeroSection />
+          <InvitationRevealSection />
+          <CountdownSection />
+          <ImageLoop />
+          <StorySection />
+          <CoverSection
+            imageUrl={cover1Image}
+            alt="Andrei & Sam Wedding Cover Image 1"
+          />
+          <VideoSection />
+          <ScrollTriggeredTimeline />
+          <VenueSection />
+          <CoverSection
+            imageUrl={cover2Image}
+            alt="Andrei & Sam Wedding Cover Image 2"
+          />
+          <DressCodeSection />
+          <MemorableMomentsSection />
+          <RSVPSection />
+          <EntourageSection />
+          <CoverSection
+            imageUrl={cover3Image}
+            alt="Andrei & Sam Wedding Cover Image 3"
+          />
+          <FAQSection />
+          <Footer />
+        </main>
+
+        {/* Music Control - always show */}
+        <MusicControl audioRef={audioRef} />
+      </div>
+    </AnimationContext.Provider>
+  );
+};
+
+export default Index;
