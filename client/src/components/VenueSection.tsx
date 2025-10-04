@@ -20,7 +20,7 @@ const VenueSection = () => {
       description: 'We will exchange vows and celebrate our union at The Grand Pavilion & Resort.',
       details: 'Please arrive early to ensure you are seated before the ceremony begins.',
       additionalInfo: 'UNPLUGGED CEREMONY - We kindly ask that the ceremony be camera-free so everyone can be fully present in the moment.',
-      startTime: '2:00 PM',
+      startTime: '1:00 PM',
       locationGuide: 'Location Guide →'
     }
   ];
