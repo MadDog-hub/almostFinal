@@ -99,7 +99,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h2 className="text-xl font-display font-semibold text-[#D4A036]">
-              A<span className="text-[#D4A036]">&</span>S
+              E<span className="text-[#D4A036]">&</span>C
             </h2>
           </div>
 
