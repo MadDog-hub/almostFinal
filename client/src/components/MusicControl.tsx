@@ -87,7 +87,7 @@ const MusicControl = ({ audioRef }: MusicControlProps) => {
       <div className="relative">
         <div className="flex items-center gap-2">
           <AnimatePresence>
-            {showControls && (
+            {isPlaying && (
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -124,45 +124,26 @@ const MusicControl = ({ audioRef }: MusicControlProps) => {
             )}
           </AnimatePresence>
           
-          <div className="flex flex-col gap-2">
-            <motion.button
-              onClick={toggleMusic}
-              className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50"
-              style={{
-                background: 'linear-gradient(135deg, rgba(23, 22, 16, 0.9) 0%, rgba(51, 51, 51, 0.8) 100%)',
-                backdropFilter: 'blur(10px)',
-                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              data-testid="button-music-control"
-              aria-label={isPlaying ? 'Pause music' : 'Play music'}
-            >
-              {isPlaying ? (
-                <Pause className="w-5 h-5 md:w-6 md:h-6" />
-              ) : (
-                <Play className="w-5 h-5 md:w-6 md:h-6 ml-0.5" />
-              )}
-            </motion.button>
-            
-            <motion.button
-              onClick={() => setShowControls(!showControls)}
-              className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50"
-              style={{
-                background: 'linear-gradient(135deg, rgba(23, 22, 16, 0.9) 0%, rgba(51, 51, 51, 0.8) 100%)',
-                backdropFilter: 'blur(10px)',
-                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              data-testid="button-volume-toggle"
-              aria-label="Toggle volume controls"
-            >
-              <Volume2 className="w-5 h-5 md:w-6 md:h-6" />
-            </motion.button>
-          </div>
+          <motion.button
+            onClick={toggleMusic}
+            className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50"
+            style={{
+              background: 'linear-gradient(135deg, rgba(23, 22, 16, 0.9) 0%, rgba(51, 51, 51, 0.8) 100%)',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+              border: '1px solid rgba(255, 255, 255, 0.2)'
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            data-testid="button-music-control"
+            aria-label={isPlaying ? 'Pause music' : 'Play music'}
+          >
+            {isPlaying ? (
+              <Pause className="w-5 h-5 md:w-6 md:h-6" />
+            ) : (
+              <Play className="w-5 h-5 md:w-6 md:h-6 ml-0.5" />
+            )}
+          </motion.button>
         </div>
       </div>
     </div>
