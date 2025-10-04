@@ -7,9 +7,9 @@ import OceanStickers from '@/components/OceanStickers';
 // Story images
 import storyImage1 from '@assets/IMG_9699_1759427962425.JPG';
 import storyImage2 from '@assets/IMG_0218_1759427962426.JPG';
-import storyImage3 from '@assets/IMG_0216_1759427962426.JPG';
-import storyImage4 from '@assets/IMG_0178_1759427962427.JPG';
-import storyImage5 from '@assets/IMG_0171_1759427962427.JPG';
+import storyImage3 from '@assets/story3_1759565740190.JPG';
+import storyImage4 from '@assets/story4_1759565740190.JPG';
+import storyImage5 from '@assets/story5_1759565740189.JPG';
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
