@@ -6,48 +6,45 @@ import { FolderOpen, Images, Folder } from 'lucide-react';
 import DomeGallery from './DomeGallery';
 
 // Prenup photos
-import prenup1 from '@assets/IMG_0146_1759427962429.JPG';
-import prenup2 from '@assets/IMG_0105_1759427962430.JPG';
-import prenup3 from '@assets/IMG_0082_1759427962430.JPG';
-import prenup4 from '@assets/IMG_0081_1759427962431.JPG';
-import prenup5 from '@assets/IMG_0080_1759427962432.JPG';
-import prenup6 from '@assets/IMG_0078_1759427962432.JPG';
-import prenup7 from '@assets/IMG_0062_1759427962433.JPG';
-import prenup8 from '@assets/IMG_0055_1759427962434.JPG';
-import prenup9 from '@assets/IMG_0053_1759427962434.JPG';
-import prenup10 from '@assets/IMG_0018_1759427962435.JPG';
-import prenup11 from '@assets/IMG_0016_1759427962435.JPG';
+import prenup1 from '@assets/prenup1_1759576540532.jpg';
+import prenup2 from '@assets/prenup2_1759576540526.JPG';
+import prenup4 from '@assets/prenup4_1759576540526.JPG';
+import prenup5 from '@assets/prenup5_1759576540527.JPG';
+import prenup6 from '@assets/prenup6_1759576540528.JPG';
+import prenup7 from '@assets/prenup7_1759576540529.JPG';
+import prenup8 from '@assets/prenup8_1759576540530.JPG';
+import prenup9 from '@assets/prenup9_1759576540531.JPG';
+import prenup10 from '@assets/prenup10_1759576540532.JPG';
+import prenup11 from '@assets/prenup11_1759576540525.JPG';
 
 const MemorableMomentsSection = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const images = [
-    { src: prenup1, alt: "Our Beginning - The moment it all started" },
-    { src: prenup2, alt: "The Proposal - She said yes!" },
-    { src: prenup3, alt: "Growing Together - Building our love story" },
-    { src: prenup4, alt: "Adventures - Creating memories together" },
-    { src: prenup5, alt: "Happy Moments - Sharing joy and laughter" },
-    { src: prenup6, alt: "Perfect Day - Every moment with you" },
-    { src: prenup7, alt: "Love Story - Writing our chapter" },
-    { src: prenup8, alt: "Cherished Times - Moments we hold dear" },
-    { src: prenup9, alt: "Together Forever - Our journey begins" },
-    { src: prenup10, alt: "Sweet Memories - Making each day special" },
-    { src: prenup11, alt: "Our Love - Celebrating us" }
+    { src: prenup1, alt: "Prenup photo 1" },
+    { src: prenup2, alt: "Prenup photo 2" },
+    { src: prenup4, alt: "Prenup photo 3" },
+    { src: prenup5, alt: "Prenup photo 4" },
+    { src: prenup6, alt: "Prenup photo 5" },
+    { src: prenup7, alt: "Prenup photo 6" },
+    { src: prenup8, alt: "Prenup photo 7" },
+    { src: prenup9, alt: "Prenup photo 8" },
+    { src: prenup10, alt: "Prenup photo 9" },
+    { src: prenup11, alt: "Prenup photo 10" }
   ];
 
   const dialogImages = [
-    { src: prenup1, title: "Our Beginning", description: "The moment it all started" },
-    { src: prenup2, title: "The Proposal", description: "She said yes!" },
-    { src: prenup3, title: "Growing Together", description: "Building our love story" },
-    { src: prenup4, title: "Adventures", description: "Creating memories together" },
-    { src: prenup5, title: "Happy Moments", description: "Sharing joy and laughter" },
-    { src: prenup6, title: "Perfect Day", description: "Every moment with you" },
-    { src: prenup7, title: "Love Story", description: "Writing our chapter" },
-    { src: prenup8, title: "Cherished Times", description: "Moments we hold dear" },
-    { src: prenup9, title: "Together Forever", description: "Our journey begins" },
-    { src: prenup10, title: "Sweet Memories", description: "Making each day special" },
-    { src: prenup11, title: "Our Love", description: "Celebrating us" }
+    { src: prenup1, title: "", description: "" },
+    { src: prenup2, title: "", description: "" },
+    { src: prenup4, title: "", description: "" },
+    { src: prenup5, title: "", description: "" },
+    { src: prenup6, title: "", description: "" },
+    { src: prenup7, title: "", description: "" },
+    { src: prenup8, title: "", description: "" },
+    { src: prenup9, title: "", description: "" },
+    { src: prenup10, title: "", description: "" },
+    { src: prenup11, title: "", description: "" }
   ];
 
   const handleImageClick = (index: number) => {

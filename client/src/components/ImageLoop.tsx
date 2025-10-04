@@ -1,10 +1,10 @@
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
 // Image loop images
-import imageLoop1 from '@assets/IMG_0170_1759427962428.JPG';
-import imageLoop2 from '@assets/IMG_0165_1759427962428.JPG';
-import imageLoop3 from '@assets/IMG_0158_1759427962429.JPG';
-import imageLoop4 from '@assets/IMG_0151_1759427962429.JPG';
+import imageLoop1 from '@assets/prenup1_1759576540532.jpg';
+import imageLoop2 from '@assets/prenup4_1759576540526.JPG';
+import imageLoop3 from '@assets/prenup6_1759576540528.JPG';
+import imageLoop4 from '@assets/prenup9_1759576540531.JPG';
 
 const ImageLoop = () => {
   const { animationsEnabled } = useAnimationContext();
