@@ -61,9 +61,9 @@ const HashtagGiftsSection = () => {
             special day by using the hashtag:
           </motion.p>
 
-          <div className="space-y-6">
+          <div className="flex flex-wrap justify-center gap-6">
             <motion.div
-              className="inline-block bg-primary/10 border border-primary/20 rounded-xl px-8 py-4"
+              className="bg-primary/10 border border-primary/20 rounded-xl px-8 py-4"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1.0, type: "spring" }}
@@ -78,7 +78,7 @@ const HashtagGiftsSection = () => {
             </motion.div>
             
             <motion.div
-              className="inline-block bg-primary/10 border border-primary/20 rounded-xl px-8 py-4"
+              className="bg-primary/10 border border-primary/20 rounded-xl px-8 py-4"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1.1, type: "spring" }}
