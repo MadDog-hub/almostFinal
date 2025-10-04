@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import OceanStickers from '@/components/OceanStickers';
 
-import semiformalImage from "@assets/guests_1759425882811.png";
-import formalImage from "@assets/ninong&ninang_1759425882811.png";
+import semiformalImage from "@assets/semiformal_1759574804307.png";
+import formalImage from "@assets/ninong-ninang_1759574810764.png";
 
 const DressCodeSection = () => {
   const dressCodeColors = [
