@@ -72,7 +72,7 @@ const HashtagGiftsSection = () => {
               className="text-2xl font-display font-semibold text-primary"
               data-testid="text-hashtag"
             >
-              #ErnestlyloveofMelaif
+              #ernestlymelaif
             </p>
           </motion.div>
         </motion.div>
