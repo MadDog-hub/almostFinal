@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import { Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
@@ -60,22 +59,20 @@ const RSVPSection = () => {
             </div>
 
             {/* RSVP Button */}
-            <Button
-              asChild
-              size="lg"
-              className="group relative px-16 py-6 text-lg font-script font-medium tracking-wide bg-[#23252f] hover:bg-[#23252f]/90 text-white shadow-lg transition-all duration-300 border-2 border-[#23252f] overflow-hidden rounded-none"
-              data-testid="button-rsvp"
-            >
-              <a 
-                href="https://ejkrizzarsvp.replit.app" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="relative inline-flex items-center justify-center w-full h-full z-10"
+            <a href="https://ejkrizzarsvp.replit.app" target="_blank" rel="noopener noreferrer">
+              <button
+                className="animated-rsvp-btn"
+                aria-label="RSVP to Wedding"
+                data-testid="button-rsvp"
               >
-                <span className="relative z-10 font-script italic">RSVP Now</span>
-                <div className="absolute inset-0 from-transparent via-primary-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform skew-x-12 group-hover:animate-pulse bg-primary-foreground/10"></div>
-              </a>
-            </Button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span className="bg-[#23252f]"></span>
+                <span>RSVP Now</span>
+              </button>
+            </a>
 
             {/* Decorative Elements */}
             <div className="mt-8 flex justify-center items-center space-x-4">
@@ -98,6 +95,63 @@ const RSVPSection = () => {
           </p>
         </motion.div>
       </div>
+
+      {/* Animated RSVP Button Styles */}
+      <style>{`
+        .animated-rsvp-btn {
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          color: white;
+          background-color: #23252f;
+          padding: 1em 2em;
+          border: none;
+          border-radius: 0;
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+        }
+
+        .animated-rsvp-btn span:not(:nth-child(6)) {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          height: 30px;
+          width: 30px;
+          background-color: #3d3228;
+          border-radius: 50%;
+          transition: .6s ease;
+        }
+
+        .animated-rsvp-btn span:nth-child(6) {
+          position: relative;
+        }
+
+        .animated-rsvp-btn span:nth-child(1) {
+          transform: translate(-3.3em, -4em);
+        }
+
+        .animated-rsvp-btn span:nth-child(2) {
+          transform: translate(-6em, 1.3em);
+        }
+
+        .animated-rsvp-btn span:nth-child(3) {
+          transform: translate(-.2em, 1.8em);
+        }
+
+        .animated-rsvp-btn span:nth-child(4) {
+          transform: translate(3.5em, 1.4em);
+        }
+
+        .animated-rsvp-btn span:nth-child(5) {
+          transform: translate(3.5em, -3.8em);
+        }
+
+        .animated-rsvp-btn:hover span:not(:nth-child(6)) {
+          transform: translate(-50%, -50%) scale(4);
+          transition: 1.5s ease;
+        }
+      `}</style>
     </motion.section>
   );
 };
