@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import OceanStickers from '@/components/OceanStickers';
 
-import semiformalImage from "@assets/semiformal_1759574804307.png";
+import semiformalImage from "@assets/4fb56a2f-cdfe-4cdf-9e04-49e0880a467a_1759578467342.png";
 import formalImage from "@assets/e3e5b880-bcbe-4bcb-8333-643377fd02a9_1759575462305.png";
 
 const DressCodeSection = () => {
