@@ -131,36 +131,36 @@ const timelineEvents: TimelineEvent[] = [
         time: "12:00 PM",
         event: "Guest Arrival & Registration",
         icon: Clock,
-        hueA: 35, // Gold
-        hueB: 45, // Orange
+        hueA: 40, // Gold
+        hueB: 40, // Gold
     },
     {
         time: "1:00 PM", 
         event: "The Entourage & Wedding Ceremony",
         icon: Heart,
-        hueA: 0,   // Red
-        hueB: 340, // Pink
+        hueA: 40, // Gold
+        hueB: 40, // Gold
     },
     {
         time: "3:00 PM",
         event: "Refreshment & Photobooth", 
         icon: Camera,
-        hueA: 210, // Light Blue
-        hueB: 240, // Blue
+        hueA: 40, // Gold
+        hueB: 40, // Gold
     },
     {
         time: "5:00 PM",
         event: "Dinner & Heartfelt Toast",
         icon: Utensils,
-        hueA: 160, // Teal
-        hueB: 190, // Green
+        hueA: 40, // Gold
+        hueB: 40, // Gold
     },
     {
         time: "6:00 PM",
         event: "A Night to Remember",
         icon: Music,
-        hueA: 270, // Purple
-        hueB: 300, // Pink
+        hueA: 40, // Gold
+        hueB: 40, // Gold
     },
 ];
 
