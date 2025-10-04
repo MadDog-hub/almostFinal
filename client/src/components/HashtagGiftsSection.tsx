@@ -61,7 +61,7 @@ const HashtagGiftsSection = () => {
             special day by using the hashtag:
           </motion.p>
 
-          <div className="space-y-3">
+          <div className="space-y-6">
             <motion.div
               className="inline-block bg-primary/10 border border-primary/20 rounded-xl px-8 py-4"
               initial={{ opacity: 0, scale: 0.9 }}
