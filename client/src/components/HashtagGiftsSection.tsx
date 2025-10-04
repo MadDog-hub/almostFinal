@@ -61,20 +61,37 @@ const HashtagGiftsSection = () => {
             special day by using the hashtag:
           </motion.p>
 
-          <motion.div
-            className="inline-block bg-primary/10 border border-primary/20 rounded-xl px-8 py-4 mt-2"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 1.0, type: "spring" }}
-            whileHover={{ scale: 1.05 }}
-          >
-            <p 
-              className="text-2xl font-display font-semibold text-primary"
-              data-testid="text-hashtag"
+          <div className="space-y-3">
+            <motion.div
+              className="inline-block bg-primary/10 border border-primary/20 rounded-xl px-8 py-4"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 1.0, type: "spring" }}
+              whileHover={{ scale: 1.05 }}
             >
-              #ernestlymelaif
-            </p>
-          </motion.div>
+              <p 
+                className="text-2xl font-display font-semibold text-primary"
+                data-testid="text-hashtag"
+              >
+                #ErnestlyloveofMelaif
+              </p>
+            </motion.div>
+            
+            <motion.div
+              className="inline-block bg-primary/10 border border-primary/20 rounded-xl px-8 py-4"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 1.1, type: "spring" }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <p 
+                className="text-2xl font-display font-semibold text-primary"
+                data-testid="text-hashtag-2"
+              >
+                #ernestlymelaif
+              </p>
+            </motion.div>
+          </div>
         </motion.div>
 
         {/* Gifts Section */}
