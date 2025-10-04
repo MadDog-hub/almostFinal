@@ -34,24 +34,24 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
 
     return (
         <motion.div
-            className={`relative pl-12 py-6 group`}
+            className={`relative pl-8 md:pl-12 py-4 md:py-6 group`}
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ amount: 0.3, once: true }}
             data-testid={`timeline-card-${i}`}
         >
             {/* Timeline dot */}
-            <div className="absolute left-0 top-8 w-6 h-6 rounded-full flex items-center justify-center z-10"
+            <div className="absolute left-0 top-6 md:top-8 w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center z-10"
                 style={{
                     background: `linear-gradient(135deg, ${hue(timelineEvent.hueA, 90, 90)}, ${hue(timelineEvent.hueB, 80, 60)})`,
                     boxShadow: '0 0 0 4px rgba(255, 255, 255, 0.8)'
                 }}
             >
-                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full"></div>
             </div>
 
             {/* Timeline line */}
-            <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+            <div className="absolute left-2.5 md:left-3 top-0 bottom-0 w-0.5 bg-gray-200"></div>
             
             {/* Card */}
             <motion.div 
@@ -59,28 +59,28 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                 variants={cardVariants}
                 whileHover={{ y: -5 }}
             >
-                <div className="p-6">
-                    <div className="flex items-start gap-4">
+                <div className="p-4 md:p-6">
+                    <div className="flex items-start gap-3 md:gap-4">
                         <div className="flex-shrink-0">
-                            <div className="w-12 h-12 rounded-full flex items-center justify-center" 
+                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center" 
                                 style={{
                                     background: `linear-gradient(135deg, ${hue(timelineEvent.hueA, 90, 90)}, ${hue(timelineEvent.hueB, 80, 60)})`,
                                     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
                                 }}
                             >
-                                <IconComponent className="w-5 h-5 text-white" />
+                                <IconComponent className="w-4 h-4 md:w-5 md:h-5 text-white" />
                             </div>
                         </div>
                         
-                        <div className="flex-1">
-                            <div className="text-sm font-medium text-amber-600 mb-1">
+                        <div className="flex-1 min-w-0">
+                            <div className="text-xs md:text-sm font-medium text-amber-600 mb-1">
                                 {timelineEvent.time}
                             </div>
-                            <h3 className="text-lg font-serif font-medium text-gray-800 mb-2">
+                            <h3 className="text-base md:text-lg font-serif font-medium text-gray-800 mb-2">
                                 {timelineEvent.event}
                             </h3>
-                            <div className="w-10 h-0.5 bg-amber-100 my-3"></div>
-                            <p className="text-sm text-gray-600">
+                            <div className="w-10 h-0.5 bg-amber-100 my-2 md:my-3"></div>
+                            <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
                                 {getEventDescription(timelineEvent.event)}
                             </p>
                         </div>
@@ -119,7 +119,7 @@ const container: React.CSSProperties = {
     position: 'relative',
     maxWidth: '600px',
     margin: '0 auto',
-    padding: '40px 20px',
+    padding: '20px 10px',
 };
 
 /**
