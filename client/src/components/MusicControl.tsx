@@ -122,11 +122,10 @@ const MusicControl = ({ audioRef }: MusicControlProps) => {
           </AnimatePresence>
           
           <motion.button
-            onClick={() => {
+            onClick={toggleMusic}
+            onContextMenu={(e) => {
+              e.preventDefault();
               setShowControls(!showControls);
-              if (!isPlaying) {
-                toggleMusic();
-              }
             }}
             className="w-14 h-14 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50"
             style={{
