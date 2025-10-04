@@ -7,7 +7,7 @@ import MusicConsentPopup from '@/components/MusicConsentPopup';
 // Cover images from attached assets
 import cover1Image from '@assets/cover1_1759418285505.JPG';
 import cover2Image from '@assets/cover2_1759418285505.JPG';
-import cover3Image from '@assets/cover3_1759418285505.JPG';
+import cover3Image from '@assets/cover3_1759574662055.JPG';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import VideoSection from '@/components/VideoSection';
