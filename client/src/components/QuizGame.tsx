@@ -29,7 +29,7 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
       id: 1,
       question: "Who made the first move?",
       options: ["The Bride", "The Groom", "It was mutual", "Still debating!"],
-      correctAnswer: 1,
+      correctAnswer: 0,
       correctReaction: "🎯 Spot on! That's exactly how it happened!",
       incorrectReaction: "😄 Nice try! But that's not quite how it went!"
     },
@@ -43,8 +43,8 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
     },
     {
       id: 3,
-      question: "Who's more likely to start a fight over food?",
-      options: ["The Bride", "The Groom", "Both equally", "Depends on the meal"],
+      question: "Who's more likely to remind the other to eat vegetables?",
+      options: ["The Bride", "The Groom", "Both equally", "Neither of them"],
       correctAnswer: 0,
       correctReaction: "💕 Perfect! You're really paying attention!",
       incorrectReaction: "💭 Ooh, so close but not quite!"
@@ -52,14 +52,14 @@ const QuizGame = ({ onComplete, animationsEnabled }: QuizGameProps) => {
     {
       id: 4,
       question: "Who planned more of the wedding?",
-      options: ["The Bride", "The Groom", "Split 50/50", "The internet"],
-      correctAnswer: 0,
+      options: ["The Bride", "The Groom", "The Bride & Groom", "The internet"],
+      correctAnswer: 2,
       correctReaction: "🌟 Excellent! You've got this down!",
       incorrectReaction: "🎪 Good thinking, but that's not it!"
     },
     {
       id: 5,
-      question: "Who's the better cook?",
+      question: "Who makes the tastier home-cooked dish?",
       options: ["The Bride", "The Groom", "We survive on takeout", "Still figuring it out"],
       correctAnswer: 1,
       correctReaction: "🎉 Brilliant! You really know them!",

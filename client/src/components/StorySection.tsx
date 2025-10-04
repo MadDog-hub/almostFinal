@@ -23,32 +23,32 @@ const StorySection = () => {
   const storyCards = [
     {
       id: 1,
-      title: "First Meeting",
-      text: "Two hearts found each other in the most unexpected way. From strangers to friends, we discovered something special.",
+      title: "How We Met",
+      text: "We met while serving in church ministry, unaware of how meaningful that moment would become. What started as friendship grew into a special bond through faith.",
       image: storyImage1
     },
     {
       id: 2, 
-      title: "Growing Together",
-      text: "We learned that love isn't just about the big moments—it's in the daily laughter, shared dreams, and quiet support.",
+      title: "Dreams Together",
+      text: "We found love in the simple moments—shared dreams and quiet support. Even as one journeyed abroad and the other set sail across the ocean, our hearts kept moving in the same direction, always dreaming together.",
       image: storyImage2
     },
     {
       id: 3,
-      title: "Adventures & Challenges", 
-      text: "Through every adventure and challenge, we've grown stronger. Running side by side through life's journey.",
+      title: "Oceans Apart", 
+      text: "Though miles and oceans lay between us, love bridged the distance. With every challenge, our hearts grew closer, always moving as one.",
       image: storyImage3
     },
     {
       id: 4,
       title: "The Decision",
-      text: "We knew we wanted to spend forever together. This isn't just our wedding day—it's the beginning of our greatest adventure.",
+      text: "We chose to wait for the right time, setting aside our dream wedding to focus on what mattered most—supporting one another. With a simple civil union as our beginning, we now look forward to celebrating our love in its fullness.",
       image: storyImage4
     },
     {
       id: 5,
       title: "Our Future",
-      text: "Today we celebrate not just our love, but all the beautiful tomorrows waiting for us. Hand in hand, heart to heart.",
+      text: "Today we celebrate a promise made possible by God's grace. With Him at the center, we step into the future together.",
       image: storyImage5
     }
   ];

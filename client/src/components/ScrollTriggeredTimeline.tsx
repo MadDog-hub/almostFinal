@@ -23,11 +23,11 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
 
     const getEventDescription = (eventName: string): string => {
         const descriptions: Record<string, string> = {
-            "Guest Arrival & Processional": "Join us as we gather to celebrate our special day. Light refreshments will be served.",
-            "Sacred Wedding Ceremony": "Witness our vows and the beginning of our journey together as we exchange rings and promises.",
-            "Cocktails & Photography": "Enjoy signature drinks and appetizers while we capture beautiful moments with our loved ones.",
-            "Dinner & Heartfelt Toasts": "A delicious meal followed by touching speeches from our closest family and friends.",
-            "Dancing Under the Stars": "Let's celebrate with music and dancing as we create unforgettable memories together."
+            "Guest Arrival & Registration": "Join us as we gather to celebrate our special day. Please arrive on time for registration.",
+            "The Entourage & Wedding Ceremony": "Witness our vows and the beginning of our journey together as we exchange rings and promises.",
+            "Refreshment & Photobooth": "Enjoy light refreshments and capture beautiful moments with our loved ones at the photobooth.",
+            "Dinner & Heartfelt Toast": "A delicious meal followed by touching speeches from our closest family and friends.",
+            "A Night to Remember": "Let's celebrate with music and dancing as we create unforgettable memories together."
         };
         return descriptions[eventName] || "Join us for this special moment in our lives.";
     };
@@ -128,36 +128,36 @@ const container: React.CSSProperties = {
 
 const timelineEvents: TimelineEvent[] = [
     {
-        time: "1:00 PM",
-        event: "Guest Arrival & Processional",
+        time: "12:00 PM",
+        event: "Guest Arrival & Registration",
         icon: Clock,
         hueA: 35, // Gold
         hueB: 45, // Orange
     },
     {
-        time: "1:30 PM", 
-        event: "Sacred Wedding Ceremony",
+        time: "1:00 PM", 
+        event: "The Entourage & Wedding Ceremony",
         icon: Heart,
         hueA: 0,   // Red
         hueB: 340, // Pink
     },
     {
         time: "3:00 PM",
-        event: "Cocktails & Photography", 
+        event: "Refreshment & Photobooth", 
         icon: Camera,
         hueA: 210, // Light Blue
         hueB: 240, // Blue
     },
     {
         time: "5:00 PM",
-        event: "Dinner & Heartfelt Toasts",
+        event: "Dinner & Heartfelt Toast",
         icon: Utensils,
         hueA: 160, // Teal
         hueB: 190, // Green
     },
     {
-        time: "8:00 PM",
-        event: "Dancing Under the Stars",
+        time: "6:00 PM",
+        event: "A Night to Remember",
         icon: Music,
         hueA: 270, // Purple
         hueB: 300, // Pink
@@ -230,7 +230,7 @@ export default function ScrollTriggeredTimeline() {
                     <div className="w-8 h-px bg-[#ffffff]"></div>
                 </div>
                 <p className="mt-4 text-muted-foreground font-body italic">
-                    A celebration of love from dusk till dawn
+                    Our Love Shines Till Evening
                 </p>
             </motion.div>
         </motion.section>

@@ -28,7 +28,7 @@ const Footer = () => {
               Carmela
             </h2>
             <p className="text-white text-lg">
-              November 09, 2025 • The Grand Pavilion & Resort, Sta. Maria, Bulacan
+              November 08, 2025 • The Grand Pavilion & Resort, Sta. Maria, Bulacan
             </p>
           </div>
 

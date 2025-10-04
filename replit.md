@@ -128,6 +128,31 @@ Successfully migrated from Lovable to Replit environment:
     - All wedding sections displaying properly
     - Dark mode aesthetic maintained
   - Minor browser console warning: Font decode error for boska-800.woff2 (OTS parsing error) - does not affect functionality
+- **2025-10-04**: Updated wedding date and content:
+  - Changed wedding date from September 7, 2025 to November 8, 2025 across all components
+  - Updated countdown timer to November 8, 2025 at 1:00 PM
+  - Updated quiz game questions and answers:
+    - Q1: "Who made the first move?" → Answer: The Bride
+    - Q2: "Who said 'I love you' first?" → Answer: The Groom
+    - Q3: "Who's more likely to remind the other to eat vegetables?" → Answer: The Bride
+    - Q4: "Who planned more of the wedding?" → Answer: The Bride & Groom
+    - Q5: "Who makes the tastier home-cooked dish?" → Answer: The Groom
+  - Updated love story sections with new titles and content:
+    - "How We Met": Church ministry meeting and friendship through faith
+    - "Dreams Together": Long distance relationship with shared dreams
+    - "Oceans Apart": Love bridging miles and oceans
+    - "The Decision": Civil union beginning, celebrating love in fullness
+    - "Our Future": Promise made possible by God's grace
+  - Updated wedding timeline:
+    - 12:00 PM: Guest Arrival & Registration
+    - 1:00 PM: The Entourage & Wedding Ceremony
+    - 3:00 PM: Refreshment & Photobooth
+    - 5:00 PM: Dinner & Heartfelt Toast
+    - 6:00 PM: A Night to Remember
+  - Changed tagline from "A celebration of love from dusk till dawn" to "Our Love Shines Till Evening"
+  - Updated HTML title and meta description with Ernesto & Carmela names and November 8, 2025 date
+  - Updated footer with correct November 8, 2025 date
+  - Updated hero section date display to 11.08.2025
 - **2025-09-30**: Added interactive quiz game for invitation reveal:
   - Replaced pirate clicking mechanism with "Open Invitation" button
   - Created QuizGame component with 5 relationship questions:
