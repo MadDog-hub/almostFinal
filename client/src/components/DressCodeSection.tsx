@@ -165,12 +165,6 @@ const DressCodeSection = () => {
                     className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full border-2 border-border shadow-soft group-hover:scale-105 transition-transform duration-300"
                     style={{ backgroundColor: colorItem.color }}
                   ></div>
-                  <p className="text-sm font-medium text-foreground mt-2 sm:mt-3 mb-1">
-                    {colorItem.name}
-                  </p>
-                  <p className="text-xs text-foreground/80 font-mono">
-                    {colorItem.hex}
-                  </p>
                 </div>
               ))}
             </div>
