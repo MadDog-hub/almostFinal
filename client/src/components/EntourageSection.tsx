@@ -2,6 +2,10 @@ import { motion } from 'framer-motion';
 import C_E_Wedding_Invt__pg_2_of_3 from "@assets/C&E Wedding Invt. pg 2 of 3.jpg";
 import C_E_Wedding_Invt__pg_3_of_3 from "@assets/C&E Wedding Invt. pg 3 of 3_1759426774103.jpg";
 
+import entourage_1 from "@assets/entourage 1.jpg";
+
+import entourage_2 from "@assets/entourage 2.jpg";
+
 const EntourageSection = () => {
   return (
     <motion.section 
@@ -33,7 +37,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.8 }}
         >
           <img 
-            src={C_E_Wedding_Invt__pg_2_of_3}
+            src={entourage_1}
             alt="Brian - Lawson Wedding Entourage"
             className="w-full max-w-4xl mx-auto object-contain mb-8"
           />
@@ -46,7 +50,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.1 }}
         >
           <img 
-            src={C_E_Wedding_Invt__pg_3_of_3}
+            src={entourage_2}
             alt="Wedding Entourage Details - Veil, Candle, Cord, Ring Bearer, and Special Guests"
             className="w-full max-w-4xl mx-auto object-contain"
           />
