@@ -14,6 +14,7 @@ import VideoSection from '@/components/VideoSection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
 import VenueSection from '@/components/VenueSection';
 import DressCodeSection from '@/components/DressCodeSection';
+import HashtagGiftsSection from '@/components/HashtagGiftsSection';
 import EntourageSection from '@/components/EntourageSection';
 import RSVPSection from '@/components/RSVPSection';
 import MemorableMomentsSection from '@/components/MemorableMomentsSection';
@@ -107,6 +108,7 @@ const Index = () => {
             alt="Andrei & Sam Wedding Cover Image 2"
           />
           <DressCodeSection />
+          <HashtagGiftsSection />
           <MemorableMomentsSection />
           <RSVPSection />
           <EntourageSection />
