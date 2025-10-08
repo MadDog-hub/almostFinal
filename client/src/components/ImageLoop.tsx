@@ -1,10 +1,10 @@
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
 // Image loop images
-import imageLoop1 from '@assets/prenup1_1759576540532.jpg';
-import imageLoop2 from '@assets/prenup4_1759576540526.JPG';
-import imageLoop3 from '@assets/prenup6_1759576540528.JPG';
-import imageLoop4 from '@assets/prenup9_1759576540531.JPG';
+const imageLoop1 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907953/loop1_nqrc5r.jpg';
+const imageLoop2 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907954/loop2_b6fs2m.jpg';
+const imageLoop3 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907954/loop3_pyuurc.jpg';
+const imageLoop4 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907953/loop_krg0hs.jpg';
 
 const ImageLoop = () => {
   const { animationsEnabled } = useAnimationContext();

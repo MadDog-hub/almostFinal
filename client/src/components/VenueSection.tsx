@@ -6,7 +6,7 @@ import { useAnimationContext } from '@/contexts/AnimationContext';
 import { LinkPreview } from '@/components/ui/link-preview';
 import OceanStickers from '@/components/OceanStickers';
 
-import ceremony_and_reception from "@assets/ceremony and reception.jpg";
+const ceremony_and_reception = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907968/venue_goalep.jpg';
 
 const VenueSection = () => {
   const { animationsEnabled } = useAnimationContext();

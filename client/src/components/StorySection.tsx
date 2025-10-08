@@ -4,12 +4,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
 import OceanStickers from '@/components/OceanStickers';
+
 // Story images
-import storyImage1 from '@assets/IMG_9699_1759427962425.JPG';
-import storyImage2 from '@assets/IMG_0218_1759427962426.JPG';
-import storyImage3 from '@assets/story3_1759565740190.JPG';
-import storyImage4 from '@assets/story4_1759565740190.JPG';
-import storyImage5 from '@assets/story5_1759565740189.JPG';
+const storyImage1 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907963/story1_cqkkj2.jpg';
+const storyImage2 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907965/story2_wpy6hr.jpg';
+const storyImage3 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907966/story3_f2jln1.jpg';
+const storyImage4 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907966/story4_pqeing.jpg';
+const storyImage5 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907967/story5_qc15gg.jpg';
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);

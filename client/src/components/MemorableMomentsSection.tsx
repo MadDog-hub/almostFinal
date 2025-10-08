@@ -6,17 +6,17 @@ import { FolderOpen, Images, Folder } from 'lucide-react';
 import DomeGallery from './DomeGallery';
 
 // Prenup photos
-import prenup1 from '@assets/prenup1_1759576540532.jpg';
-import prenup2 from '@assets/prenup2_1759576540526.JPG';
-import prenup4 from '@assets/prenup4_1759576540526.JPG';
-import prenup5 from '@assets/prenup5_1759576540527.JPG';
-import prenup6 from '@assets/prenup6_1759576540528.JPG';
-import prenup7 from '@assets/prenup7_1759576540529.JPG';
-import prenup8 from '@assets/prenup8_1759576540530.JPG';
-import prenup9 from '@assets/prenup9_1759576540531.JPG';
-import prenup10 from '@assets/prenup10_1759576540532.JPG';
-import prenup11 from '@assets/prenup11_1759576540525.JPG';
-import prenup12 from '@assets/IMG_9880_1759579296604.JPG';
+const prenup1 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907955/prenup1_y1u9kc.jpg';
+const prenup2 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907956/prenup2_t5ilwo.jpg';
+const prenup3 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907956/prenup3_oscfui.jpg';
+const prenup4 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907957/prenup4_zbteef.jpg';
+const prenup5 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907957/prenup5_jnw1fb.jpg';
+const prenup6 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907959/prenup6_mfkwlh.jpg';
+const prenup7 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907959/prenup7_vw5k16.jpg';
+const prenup8 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907959/prenup8_hfousv.jpg';
+const prenup9 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907960/prenup9_dcx7qy.jpg';
+const prenup10 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907962/prenup10_lslo09.jpg';
+const prenup11 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907962/prenup11_jlvowl.jpg';
 
 const MemorableMomentsSection = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -25,20 +25,21 @@ const MemorableMomentsSection = () => {
   const images = [
     { src: prenup1, alt: "Prenup photo 1" },
     { src: prenup2, alt: "Prenup photo 2" },
-    { src: prenup4, alt: "Prenup photo 3" },
-    { src: prenup5, alt: "Prenup photo 4" },
-    { src: prenup6, alt: "Prenup photo 5" },
-    { src: prenup7, alt: "Prenup photo 6" },
-    { src: prenup8, alt: "Prenup photo 7" },
-    { src: prenup9, alt: "Prenup photo 8" },
-    { src: prenup10, alt: "Prenup photo 9" },
-    { src: prenup11, alt: "Prenup photo 10" },
-    { src: prenup12, alt: "Prenup photo 11" }
+    { src: prenup3, alt: "Prenup photo 3" },
+    { src: prenup4, alt: "Prenup photo 4" },
+    { src: prenup5, alt: "Prenup photo 5" },
+    { src: prenup6, alt: "Prenup photo 6" },
+    { src: prenup7, alt: "Prenup photo 7" },
+    { src: prenup8, alt: "Prenup photo 8" },
+    { src: prenup9, alt: "Prenup photo 9" },
+    { src: prenup10, alt: "Prenup photo 10" },
+    { src: prenup11, alt: "Prenup photo 11" }
   ];
 
   const dialogImages = [
     { src: prenup1, title: "", description: "" },
     { src: prenup2, title: "", description: "" },
+    { src: prenup3, title: "", description: "" },
     { src: prenup4, title: "", description: "" },
     { src: prenup5, title: "", description: "" },
     { src: prenup6, title: "", description: "" },
@@ -46,8 +47,7 @@ const MemorableMomentsSection = () => {
     { src: prenup8, title: "", description: "" },
     { src: prenup9, title: "", description: "" },
     { src: prenup10, title: "", description: "" },
-    { src: prenup11, title: "", description: "" },
-    { src: prenup12, title: "", description: "" }
+    { src: prenup11, title: "", description: "" }
   ];
 
   const handleImageClick = (index: number) => {

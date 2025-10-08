@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import OceanStickers from '@/components/OceanStickers';
 
-import semiformalImage from "@assets/4fb56a2f-cdfe-4cdf-9e04-49e0880a467a_1759578467342.png";
-import formalImage from "@assets/e3e5b880-bcbe-4bcb-8333-643377fd02a9_1759575462305.png";
+const semiformalImage = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907952/guests-attire_dwetgs.jpg';
+const formalImage = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907963/principal_sponsors_oxcach.jpg';
 
 const DressCodeSection = () => {
   const dressCodeColors = [
