@@ -47,7 +47,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.1 }}
         >
           <img 
-            src={entourage_2}
+            src="https://res.cloudinary.com/dvksdguxi/image/upload/v1759909047/entourage_2-DhDDrBY4_cblxew.jpg"
             alt="Wedding Entourage Details - Veil, Candle, Cord, Ring Bearer, and Special Guests"
             className="w-full max-w-4xl mx-auto object-contain"
           />
