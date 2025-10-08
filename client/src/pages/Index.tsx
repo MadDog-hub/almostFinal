@@ -4,10 +4,10 @@ import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import ImageLoop from '@/components/ImageLoop';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
-// Cover images from attached assets
-import cover1Image from '@assets/cover1_1759418285505.JPG';
-import cover2Image from '@assets/cover2_1759418285505.JPG';
-import cover3Image from '@assets/cover3_1759574662055.JPG';
+// Cover images from Cloudinary
+const cover1Image = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907952/hero-section_1759418285504_dgtu9h.jpg';
+const cover2Image = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907953/loop1_nqrc5r.jpg';
+const cover3Image = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907954/loop3_pyuurc.jpg';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import VideoSection from '@/components/VideoSection';

@@ -1,10 +1,7 @@
 import { motion } from 'framer-motion';
-import C_E_Wedding_Invt__pg_2_of_3 from "@assets/C&E Wedding Invt. pg 2 of 3.jpg";
-import C_E_Wedding_Invt__pg_3_of_3 from "@assets/C&E Wedding Invt. pg 3 of 3_1759426774103.jpg";
 
-import entourage_1 from "@assets/entourage 1.jpg";
-
-import entourage_2 from "@assets/entourage 2.jpg";
+const entourage_1 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907963/principal_sponsors_oxcach.jpg';
+const entourage_2 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907952/guests-attire_dwetgs.jpg';
 
 const EntourageSection = () => {
   return (
