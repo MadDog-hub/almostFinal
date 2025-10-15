@@ -1,8 +1,5 @@
 import { motion } from 'framer-motion';
 
-const entourage_1 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907963/principal_sponsors_oxcach.jpg';
-const entourage_2 = 'https://res.cloudinary.com/dvksdguxi/image/upload/v1759907952/guests-attire_dwetgs.jpg';
-
 const EntourageSection = () => {
   return (
     <motion.section 
@@ -34,7 +31,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.8 }}
         >
           <img 
-            src="https://res.cloudinary.com/dvksdguxi/image/upload/v1759909048/entourage_1-PqldBqkU_aonxis.jpg"
+            src="https://res.cloudinary.com/dvksdguxi/image/upload/v1760512009/Rev_6_C_E_Wedding_Invt._pg_2_of_3_b5taaj.jpg"
             alt="Brian - Lawson Wedding Entourage"
             className="w-full max-w-4xl mx-auto object-contain mb-8"
           />
@@ -47,7 +44,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.1 }}
         >
           <img 
-            src="https://res.cloudinary.com/dvksdguxi/image/upload/v1759909047/entourage_2-DhDDrBY4_cblxew.jpg"
+            src="https://res.cloudinary.com/dvksdguxi/image/upload/v1760512009/Rev_6.1_C_E_Wedding_Invt._pg_3_of_3_y6arws.jpg"
             alt="Wedding Entourage Details - Veil, Candle, Cord, Ring Bearer, and Special Guests"
             className="w-full max-w-4xl mx-auto object-contain"
           />
