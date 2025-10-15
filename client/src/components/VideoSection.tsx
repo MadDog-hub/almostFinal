@@ -1,51 +1,6 @@
-import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const VideoSection = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handlePlay = () => {
-      // Pause background music when video starts
-      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
-      if (audio) {
-        audio.pause();
-      }
-    };
-
-    const handlePause = () => {
-      // Resume background music when video pauses
-      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
-      if (audio) {
-        audio.play().catch(() => {
-          // Silently handle autoplay restrictions
-        });
-      }
-    };
-
-    const handleEnded = () => {
-      // Resume background music when video ends
-      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
-      if (audio) {
-        audio.play().catch(() => {
-          // Silently handle autoplay restrictions
-        });
-      }
-    };
-
-    video.addEventListener('play', handlePlay);
-    video.addEventListener('pause', handlePause);
-    video.addEventListener('ended', handleEnded);
-
-    return () => {
-      video.removeEventListener('play', handlePlay);
-      video.removeEventListener('pause', handlePause);
-      video.removeEventListener('ended', handleEnded);
-    };
-  }, []);
 
   return (
     <motion.section 
@@ -60,27 +15,17 @@ const VideoSection = () => {
         </h2>
       </div>
       <div className="relative w-full overflow-hidden">
-        <video
-          ref={videoRef}
-          loop
-          playsInline
-          controls
-          style={{
-            display: 'block',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-            objectPosition: 'top',
-            margin: 0,
-            padding: 0
-          }}
-        >
-          <source
-            src="https://res.cloudinary.com/dpzxdmqqg/video/upload/v1755326629/LUIS_JESSY_Our_Prenup_Music_Video_zfytbf_g7zn7u_tdoloe.mp4"
-            type="video/mp4"
+        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/S9RQqfamD4U"
+            title="Save the Date Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            data-testid="video-youtube-embed"
           />
-          Your browser does not support the video tag.
-        </video>
+        </div>
       </div>
     </motion.section>
   );
